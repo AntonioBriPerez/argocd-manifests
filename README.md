@@ -42,7 +42,23 @@ and declarea the port in which we can expose our service (a simple Flask API in 
 [In this file](https://github.com/AntonioBriPerez/argocd-manifests/blob/main/application.yml) Finally we need to specify what ArgoCD needs in order to deploy automatically our service. In this case, the repo URL is this one (however, in a real case should be another) and the server of the kubernetes, remember in our case our ArgoCD server and our k8s cluster is the same. 
 
 ## Installing ArgoCD
+```
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
 
 ### Configuring ArgoCD
+Now, we deploy our ArgoCD server with the following command: 
+```
+kubectl port-forward -n argocd svc/argocd-server 8080:443
+```
+Now if we go to the URL's on the screen (probably 127.0.0.1:8080) we will set in the user box "admin" and to get our password we will need to execute: 
+```
+kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
+```
+And get the field named "password and execute": 
+```
+echo <previous_output> | base64 --decode
+```
+And we will introduce that output in password field in ArgoCD
 
 
