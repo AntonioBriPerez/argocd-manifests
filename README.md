@@ -47,6 +47,7 @@ and declarea the port in which we can expose our service (a simple Flask API in 
 [In this file](https://github.com/AntonioBriPerez/argocd-manifests/blob/main/application.yml) Finally we need to specify what ArgoCD needs in order to deploy automatically our service. In this case, the repo URL is this one (however, in a real case should be another) and the server of the kubernetes, remember in our case our ArgoCD server and our k8s cluster is the same. 
 
 ## Installing ArgoCD
+Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. Argo CD automates the deployment of the desired application states in the specified target environments. Application deployments can track updates to branches, tags, or pinned to a specific version of manifests at a Git commit.
 ```
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
