@@ -45,6 +45,11 @@ and declarea the port in which we can expose our service (a simple Flask API in 
 ```
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
+And to check indeed ArgoCD is installed under ArgoCD namespace we can execute
+```
+kubectl get pod -n argocd
+```
+![alt_text](https://github.com/AntonioBriPerez/argocd-manifests/blob/main/images/argo_cd_server.png)
 
 ### Configuring ArgoCD
 Now, we deploy our ArgoCD server with the following command: 
