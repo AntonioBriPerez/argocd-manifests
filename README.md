@@ -24,8 +24,15 @@ Now we start the cluster:
 ```
 minikube start
 ```
+We can now check out cluster information: 
+```
+kubectl cluster-info
+```
+## Configuring our application
+We first create a file named deployment.yml in the path /dev so we will have a file in dev/deployment.yml. In this file we declare our app and how many replicas we want in our cluster (be aware that this could be an AWS EKS cluster, that we could create with Terraform, for example). 
+
 ## Installing ArgoCD
 
 ### Configuring ArgoCD
 
-## Configuring our application
+
