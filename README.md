@@ -1,5 +1,6 @@
 # argocd-manifests
 Before jumping into our implementation I would like to thank Youtube Channel [TechWorld with Nana](https://www.youtube.com/channel/UCdngmbVKX1Tgre699-XLlUA) and [her video](https://youtu.be/MeU5_k9ssrs) because all this work is based on her fantastic video. 
+Secondly, to implement all of the following pipeline is necessary to have the CI part that is explained in [my other repo](https://github.com/AntonioBriPerez/CI-CD-argoCD-sample-app)
 ## Installing kubectl
 Download Kubectl
 ```
