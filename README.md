@@ -61,4 +61,9 @@ echo <previous_output> | base64 --decode
 ```
 And we will introduce that output in password field in ArgoCD
 
-
+## Applying application config to ArgoCD
+To start with ArgoCD we need to execute
+```
+kubectl apply -f application.yml 
+```
+And we will see how our service starts. Finally, when we want to deploy a new version we will just need to modify our file [deployment.yml](https://github.com/AntonioBriPerez/argocd-manifests/blob/main/dev/deployment.yml) the field "image" with our new version. Obviously this tag can be externlized to a file that its name could be only IMAGE_TAG so we only need to modify that text file and have this tag in deployment parameterized. 
