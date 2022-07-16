@@ -3,9 +3,10 @@ kind: Application
 metadata:
   name: myapp-argo-application
   namespace: argocd
-spec: 
+spec:
   project: default
-  source: 
+
+  source:
     repoURL: https://github.com/AntonioBriPerez/argocd-manifests
     targetRevision: HEAD
     path: dev
@@ -14,8 +15,10 @@ spec:
     namespace: myapp
 
   syncPolicy:
-    syncOptions: 
+    syncOptions:
     - CreateNamespace=true
-    automated: 
+
+    automated:
       selfHeal: true
       prune: true
+
