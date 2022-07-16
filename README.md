@@ -15,7 +15,7 @@ kubectl version --client
 
 
 ## Installing minikube
-
+As we dont have access to AWS, Azure Google Cloud Platform we will use Minikube for learning purposes. Minikube is local Kubernetes, focusing on making it easy to learn and develop for Kubernetes. All you need is Docker (or similarly compatible) container or a Virtual Machine environment. 
 ## Installing ArgoCD
 
 ### Configuring ArgoCD
