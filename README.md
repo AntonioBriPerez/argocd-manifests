@@ -28,6 +28,8 @@ We can now check out cluster information:
 ```
 kubectl cluster-info
 ```
+And we should see: 
+![alt_text](https://github.com/AntonioBriPerez/argocd-manifests/blob/main/images/minikube_status.png)
 ## Configuring our application
 ### Deployment.yml
 We first create a file named deployment.yml in the path /dev so we will have a file in dev/deployment.yml. In this file we declare our app and how many replicas we want in our cluster (be aware that this could be an AWS EKS cluster, that we could create with Terraform, for example). Our deployment file is as follows:
