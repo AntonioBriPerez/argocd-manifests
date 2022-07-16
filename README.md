@@ -2,7 +2,8 @@
 Before jumping into our implementation I would like to thank Youtube Channel [TechWorld with Nana](https://www.youtube.com/channel/UCdngmbVKX1Tgre699-XLlUA) and [her video](https://youtu.be/MeU5_k9ssrs) because all this work is based on her fantastic video. 
 Secondly, to implement all of the following pipeline is necessary to have the CI part that is explained in [my other repo](https://github.com/AntonioBriPerez/CI-CD-argoCD-sample-app)
 ## Installing kubectl
-Download Kubectl
+The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs.
+To download Kubectl
 ```
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 ```
